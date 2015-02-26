@@ -21,7 +21,7 @@ function initialize() {
         };
         map = new google.maps.Map(document.getElementById("map"), myOptions);
 
-        downloadUrl("creationxmlrando.php", function(data)
+        downloadUrl("creationxmlrando.php?pseudo=lionel", function(data)
         {
                
                 var xml = data.responseXML;

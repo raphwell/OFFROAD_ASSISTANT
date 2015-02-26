@@ -15,7 +15,7 @@
         <h1>Suivre un participant à une randonnée en cours</h1>
         
         <section id="localisation">
-            <form action="../creationxmlrando.php" method="POST"> 
+            <form action="../creationxmlrando.php" method="GET"> 
             <label for="pseudo">Veuillez indiquer le pseudo :</label>
             <input type="text" id="pseudo" name="pseudo"  size="35" pattern="^[a-zA-Z\s\-]+$" />
             <br><br>

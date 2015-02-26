@@ -1,5 +1,5 @@
 <?php
-include_once(RACINE.'\config\define.php');
+include_once(RACINE.'/config/define.php');
 ?>
 
 

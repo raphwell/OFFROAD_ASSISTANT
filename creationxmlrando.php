@@ -22,7 +22,7 @@ try {
 
 // Select all the rows in the markers table
 try {
-        $pseudo = filter_input(INPUT_POST, 'pseudo', FILTER_SANITIZE_STRING);
+        $pseudo = filter_input(INPUT_GET, 'pseudo', FILTER_SANITIZE_STRING);
         $sql ="SELECT X,Y ";
         $sql.="FROM position inner join position_inscrit on ";
         $sql.="position.idpoint=position_inscrit.idpoint ";
