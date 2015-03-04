@@ -12,16 +12,16 @@ var map;
 
 function initialize() {          
 
-        var France = new google.maps.LatLng(47.0067236, 2.7095064);
+        var France = new google.maps.LatLng(43.152987, 5.940431);
         var myOptions =
         {
-                zoom: 7,
+                zoom: 14,
                 center: France,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         map = new google.maps.Map(document.getElementById("map"), myOptions);
 
-        downloadUrl("creationxmlrando.php?pseudo=lionel", function(data)
+        downloadUrl("creationxmlrando.php?pseudo=raph", function(data)
         {
                
                 var xml = data.responseXML;
