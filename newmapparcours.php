@@ -44,9 +44,9 @@
       });
     }
 
-    function bindInfoWindow(marker, map, infoWindow, point) {
+    function bindInfoWindow(marker, map, infoWindow, html) {
       google.maps.event.addListener(marker, 'click', function() {
-        infoWindow.setContent(point);
+        infoWindow.setContent(html);
         infoWindow.open(map, marker);
       });
     }

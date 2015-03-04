@@ -26,7 +26,7 @@ and open the template in the editor.
             <br><br>
             
             <input type="button" id="selectionner" name="selectionner" value="Choisir!"/>
-            <a id="selection" href="../polylineparcours.php"></a>
+            <a id="selection" href="../newmapparcours.php"></a>
             <br>
             </form>
         </section>

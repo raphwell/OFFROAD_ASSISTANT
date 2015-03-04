@@ -67,9 +67,9 @@ h1 {
 }
 
 #map {
-    height: 800px;
+    height: 650px;
     margin: 0 auto 0 auto;
-    width: 950px;
+    width: 100%;
     text-align: center;
 }
 

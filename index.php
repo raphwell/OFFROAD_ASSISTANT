@@ -14,7 +14,7 @@
         include_once('config/conf.php');
         include('./includes/menu.php');
         include_once (INCLUDE_PATH . 'connect.inc.php');
-        include(INCLUDE_PATH . 'traitements.inc.php');  
+        //include(INCLUDE_PATH . 'traitements.inc.php');  
         $conn = connexion();
         ?>
     <body>
