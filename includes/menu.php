@@ -17,7 +17,7 @@
             $pages = array(
                 "Accueil" => $dirIndex . "index.php",
                 "Suivre un randonneur" => $dirPages . "visuRando.php",
-                "Preparer une rando" => $dirPages . "prepaParcours.php",
+                "Préparer une randonnée" => $dirPages . "prepaParcours.php",
             );
             // Affichage des liens de la barre de navigation
             foreach ($pages as $nom => $url) {

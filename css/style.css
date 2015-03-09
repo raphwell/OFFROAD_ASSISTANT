@@ -8,10 +8,40 @@ and open the template in the editor.
     Author     : Raph
 */
 html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
+
+@font-face {
+    font-family: "MissSpeechy";
+    src: url('polices/KGMissSpeechyIPA.ttf');
+}
+
+@font-face {
+    font-family: "ShadowDark";
+    src: url('polices/DJB Me and My Shadow Dark.ttf');
+}
+
+@font-face {
+    font-family: "Fuse";
+    src: url('polices/FUSENORM.ttf');
+}
+
+@font-face {
+    font-family: "Shadow";
+    src: url('polices/DJB Me and My Shadow.ttf');
+}
+
+@font-face {
+    font-family: "Pamela";
+    src: url('polices/Pamela want a Bike to Ride.ttf');
+}
+
+
+
+
+
 header {
     height: 200px;
     background: url('../images/banniere1.png') no-repeat scroll center 0;
@@ -51,17 +81,15 @@ nav li a:hover {
     color: white;
     background-color: black;
 }
- 
+
 body {
-    margin: 0;
+    color:black;
+    background-color:white;
+    background:url('../images/montagne.jpg') scroll center 0;
 }
 
-h1 {
-    color: red;
+div {
     text-align: center;
-    float: left;
-    margin-left: 150px;
-    font-size : medium;
 }
 
 #map {
@@ -86,5 +114,16 @@ h1 {
 #address {
     margin-left: 50px;
 }
+
+#principal {
+    border-width: thick;
+    border: groove;
+    border-radius: 10px;
+    font-family: "MissSpeechy";
+    background-color: whitesmoke;
+    
+}
+
+
 
 

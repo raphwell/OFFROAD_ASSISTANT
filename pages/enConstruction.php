@@ -14,6 +14,9 @@
         <br>
         <h2>EN CONSTRUCTION</h2>
         <h1>Prochainement, vous pourrez visualiser les parcours enregistrés par tous les randonneurs inscrits</h1>
+        <br>
+        <br>
+        <div><img src="../images/WorkInProgress.gif"></div>
          
         
     </body>
