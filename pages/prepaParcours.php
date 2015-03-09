@@ -11,27 +11,28 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css" />
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="../javascript/trouverParcours.js"></script>
+        <script src="../javascript/polylineParcours.js"></script>
     </head>
     <body onload="initialize()">
         
         <?php include('../includes/menu.php'); ?>
         
-        <h1></h1>
         
         <section id="localisation">
-            <form> 
-            <label for="ville">Veuillez indiquer la ville :</label>
-            <input type="text" id="ville" name="ville"  size="35" pattern="^[a-zA-Z\s\-]+$" />
+            <form name="parcours" > 
+            <label for="departement">Veuillez choisir le département :</label>
+            <input type="text" id="departement" name="departement"  size="35" pattern="^[a-zA-Z\s\-]+$" />
             <br><br>
             
-            <input type="button" id="selectionner" name="selectionner" value="Choisir!"/>
-            <a id="selection" href="../newmapparcours.php"></a>
+            <input type="button" value="  OK  " onclick="window.open('enConstruction.php');" />
+            
             <br>
             </form>
         </section>
         
         <br>
+        
+        
 
     </body>
 </html>

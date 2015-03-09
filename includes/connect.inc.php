@@ -4,8 +4,8 @@ function connexion() {
     
 $servername = "localhost";
 $username = "garcia";
-$password = "garcia";
-$dbname = "offroad";
+$password = "motdepasse";
+$dbname = "garcia";
 
 try {
     //$conn = "mysql:host=$servername;dbname=$dbname";

@@ -1,43 +1,35 @@
 <?php
 
-//require("./includes/connect.inc.php");
-
-// Start XML file, create parent node
-
-
 $username="garcia";
-$password="garcia";
-$database="offroad";
+$password="motdepasse";
+$dbname="garcia";
 
 $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
 
 // Connexion a MySQL server
+
+
 try {
-    $connexion= new PDO('mysql:host=localhost;dbname=offroad', $username, $password);
+    $connexion= new PDO('mysql:host=localhost;dbname=garcia', $username, $password);
     } catch (PDOException $ex) {
         throw new Exception('Connexion impossible');
     }
 
-// Select all the rows in the markers table
+// Select des positions voulues
 try {
         $pseudo = filter_input(INPUT_GET, 'pseudo', FILTER_SANITIZE_STRING);
-        $sql ="SELECT X,Y ";
+        $sql ="SELECT X,Y,HORODATAGE ";
         $sql.="FROM position inner join position_inscrit on ";
         $sql.="position.idpoint=position_inscrit.idpoint ";
         $sql.="inner join inscrit on position_inscrit.idinscrit=inscrit.idinscrit ";
         $sql.="inner join utilisateur on inscrit.idutilisateur=utilisateur.idutilisateur ";
-        $sql.="where utilisateur.pseudo = :nt  ";
+        $sql.="where utilisateur.pseudo = :input  ";
         $res=$connexion->prepare($sql);
-        $res->bindValue(':nt', $pseudo);
+        $res->bindValue(':input', $pseudo);
         $res->execute();
     
-//    $sql="select X, Y from position";
-//    $res=$connexion->query($sql);
-//    while ($row = $res->fetch()) {
-//        echo $row['X']."-".$row['Y'];
-//    }
     } catch (PDOException $ex) {
     throw new Exception('requete impossible');
 	}
@@ -45,9 +37,7 @@ try {
 
 header("Content-type: text/xml");
 
-// Iterate through the rows, adding XML nodes for each
-//while ($row = mysql_fetch_row($res)) {
-    
+   
 
 while ($row = $res->fetch()){
   // ADD TO XML DOCUMENT NODE
@@ -55,9 +45,9 @@ while ($row = $res->fetch()){
   $newnode = $parnode->appendChild($node);
   $newnode->setAttribute("lat", $row['X']);
   $newnode->setAttribute("lng", $row['Y']);
+  $newnode->setAttribute("date", $row['HORODATAGE']);
   
 }
 
 echo $dom->saveXML();
 
-?>
