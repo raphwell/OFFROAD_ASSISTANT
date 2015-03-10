@@ -13,6 +13,8 @@
         
         <?php include('../includes/menu.php'); ?>
         
+        <br>
+        <br>
         <h1>Suivre un participant à une randonnée en cours</h1>
         
         <section id="localisation">

@@ -4,11 +4,21 @@ $username="garcia";
 $password="motdepasse";
 $dbname="garcia";
 
+
 $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
 
 // Connexion a MySQL server
+
+//try {
+//    define('RACINE',__DIR__);
+//        include_once('config/conf.php');
+//        include_once (INCLUDE_PATH . 'connect.inc.php');
+//        $connexion = connexion();
+//} catch (Exception $ex) {
+//    echo 'impossible de se connecter';
+//}
 
 
 try {

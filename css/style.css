@@ -18,30 +18,6 @@ html {
     src: url('polices/KGMissSpeechyIPA.ttf');
 }
 
-@font-face {
-    font-family: "ShadowDark";
-    src: url('polices/DJB Me and My Shadow Dark.ttf');
-}
-
-@font-face {
-    font-family: "Fuse";
-    src: url('polices/FUSENORM.ttf');
-}
-
-@font-face {
-    font-family: "Shadow";
-    src: url('polices/DJB Me and My Shadow.ttf');
-}
-
-@font-face {
-    font-family: "Pamela";
-    src: url('polices/Pamela want a Bike to Ride.ttf');
-}
-
-
-
-
-
 header {
     height: 200px;
     background: url('../images/banniere1.png') no-repeat scroll center 0;
@@ -80,12 +56,6 @@ nav li a {
 nav li a:hover {
     color: white;
     background-color: black;
-}
-
-body {
-    color:black;
-    background-color:white;
-    background:url('../images/montagne.jpg') scroll center 0;
 }
 
 div {
