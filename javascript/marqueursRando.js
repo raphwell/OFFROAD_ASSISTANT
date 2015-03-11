@@ -9,7 +9,7 @@
 
 function initialize() {
     var map = new google.maps.Map(document.getElementById("map"), {
-        center: new google.maps.LatLng(47.08, 2.40),
+        center: new google.maps.LatLng(46.65, 2.45),
         zoom: 6,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -26,12 +26,10 @@ downloadUrl("../xml/creationxmlrando.php?pseudo=" + pseudo, function (data) {
         var latitude = position[i].getAttribute("lat");
         var longitude = position[i].getAttribute("lng");
         var date = position[i].getAttribute("date");
-        //var type = position[i].getAttribute("type");
         var point = new google.maps.LatLng(
                 parseFloat(position[i].getAttribute("lat")),
                 parseFloat(position[i].getAttribute("lng")));
         var html = "randonneur: " + nom + "<br> lat: " + latitude + "<br> long: " + longitude + "<br>" + date;
-        //var icon = customIcons[type] || {};
         var marker = new google.maps.Marker({
             map: map,
             position: point,

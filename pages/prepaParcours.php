@@ -15,7 +15,7 @@ and open the template in the editor.
     </head>
     <body onload="initialize()">
         
-        <?php include(INCLUDE_PATH . 'menu.php'); ?>
+        <?php include('../includes/menu.php'); ?>
         
         
         <section id="localisation">

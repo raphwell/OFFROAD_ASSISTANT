@@ -33,8 +33,13 @@
                 <p> qui ont été enregistrés dans notre base de données par les randonneurs, </p> 
                 <p> et de préparer votre circuit en connaissant les caractéristiques de chaque parcours. </p>
                 <br>
-                
             </article>
+            <div class="mde">
+            <a href="documents/modeEmploiAppli.pdf">Mode d'emploi de l'appli mobile</a>
+            <p class="text">Nécessite un lecteur pdf</p>
+            </div>
+        <br><br>
+        <br><br>
         </section>
            
     </body>

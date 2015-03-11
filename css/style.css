@@ -19,10 +19,11 @@ html {
 }
 
 header {
-    height: 200px;
+    height: 148px;
     background: url('../images/banniere1.png') no-repeat scroll center 0;
+    
 }
-header, nav, section, footer {
+header, nav, section {
     margin: 0 auto 0 auto;
     width: 950px;
     text-align: center;
@@ -34,7 +35,7 @@ h1,h2 {
     font-size : medium;
 }
 nav {
-    margin-top: 178px;
+    margin-top: 140px;
     width: 99%;
     float: left;
 }
@@ -69,7 +70,7 @@ div {
     text-align: center;
 }
 
-#panel {
+/*#panel {
     top: 5px;
     left: 50%;
     margin-left: -180px;
@@ -81,9 +82,10 @@ div {
 #btn_geocode {
     margin-left: 50px;
 }
+
 #address {
     margin-left: 50px;
-}
+}*/
 
 #principal {
     border-width: thick;
@@ -94,6 +96,34 @@ div {
     
 }
 
+#principal a:hover {
+    color: whitesmoke;
+    
+}
 
+.mde {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.mde:hover p.text {
+    opacity: 1;
+}
+
+.mde p.text {
+    color: black;
+    //width: 200px;
+    //height: 200px;
+    margin: 0 auto;
+    top: 0;
+    opacity: 0;
+    display: block;
+    position: inherit;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+}
 
 

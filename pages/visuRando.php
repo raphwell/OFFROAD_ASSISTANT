@@ -11,17 +11,15 @@
     </head>
     <body onload="initialize()">
         
-        <?php include('../includes/menu.php'); ?>
+                <?php include('../includes/menu.php'); ?>
         
         <br>
         <br>
-        <h1>Suivre un participant à une randonnée en cours</h1>
         
         <section id="localisation">
             <form  name="rando" > 
             <label for="pseudo">Veuillez indiquer le pseudo :</label>
             <input type="text" id="pseudo" name="pseudo"  size="35" pattern="^[a-zA-Z\s\-]+$" />
-            <br><br>
             
             <input type="button" onclick="initialize()" value="  OK  "/>
             
